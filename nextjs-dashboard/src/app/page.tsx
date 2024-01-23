@@ -8,6 +8,7 @@ export default function Home() {
     <main className={styles.main}>
 
             <NavBar />
+            <h1>Handcraft Haven</h1>
             <Banner />
     </main>
   );

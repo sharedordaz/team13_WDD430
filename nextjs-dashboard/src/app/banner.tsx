@@ -4,11 +4,11 @@ import styles from "./page.module.css";
 export default function NavBar() {
   return (
 <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
+              src="/banner.jpg"
+              alt="Banner"
               className={styles.vercelLogo}
-              width={100}
-              height={24}
+              width={1360}
+              height={500}
               priority
             />
 )}
