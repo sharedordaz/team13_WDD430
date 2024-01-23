@@ -8,7 +8,7 @@ export default function NavBar() {
               alt="Banner"
               className={styles.vercelLogo}
               width={1360}
-              height={500}
+              height={600}
               priority
             />
 )}
