@@ -17,8 +17,10 @@ https://www.globant.com/about
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-            <Banner />
-    </main>
+    <>
+            <div className={styles.main}>
+                <Banner />
+            </div>
+    </>
   );
 }
