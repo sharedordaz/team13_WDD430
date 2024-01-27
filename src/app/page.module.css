@@ -1,10 +1,15 @@
 
 .main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 100vh;
+  margin-top: 30%;
+  display: grid;
+  grid-template: repeat(auto-fill, minmax(300px, 1fr))
+   / repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+}
+
+.main img {
+   max-width:200px;
+   max-height: 200px;
 }
 
 .top_void{
@@ -63,6 +68,7 @@
   background: rgba(var(--card-rgb), 0);
   border: 1px solid rgba(var(--card-border-rgb), 0);
   transition: background 200ms, border 200ms;
+  text-align: center;
 }
 
 .card span {
@@ -80,7 +86,6 @@
   opacity: 0.6;
   font-size: 0.9rem;
   line-height: 1.5;
-  max-width: 30ch;
   text-wrap: balance;
 }
 
