@@ -9,6 +9,18 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 
+
+  /*Team Variables*/
+    --rosy-brown: #CF9893;
+  --onyx: #474448;
+  --raisin-black: #2D232E;
+  --wenge: #534B52;
+  --green-olive: ##84A98C;
+
+
+
+
+
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
     #16abff33 0deg,
@@ -38,6 +50,10 @@
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
+}
+
+html {
+    --white: #000000; 
 }
 
 @media (prefers-color-scheme: dark) {

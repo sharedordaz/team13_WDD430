@@ -1,3 +1,4 @@
+
 .main {
   display: flex;
   flex-direction: column;
@@ -6,15 +7,15 @@
   min-height: 100vh;
 }
 
-.banner{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 100vh;
+.top_void{
+  background-color:#534B52;
   width: 100%;
-  height: 30%;
+  height: 24%;
+}
 
+.banner{
+  width: 100%;
+  height: 40%;
 }
 
 .description {
@@ -115,6 +116,8 @@
   transform: translateZ(0);
 }
 
+
+
 .nav ul {
   list-style: none;
   display: flex;
@@ -140,12 +143,17 @@
 }
 
 .header {
+  position:fixed;
+  width: 100%;
+  height:24%;
+
+  background-color: #534B52AA;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px; 
 }
 
 .logoContainer {

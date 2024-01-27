@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Banner from '@/app/banner'; 
-
+import MainGrid from '@/app/main-grid';
 /*
 TODO:
 -Shopping Cart (Douglas Fabricio)
@@ -18,9 +18,13 @@ https://www.globant.com/about
 export default function Home() {
   return (
     <>
-            <div className={styles.main}>
+            <div className= {styles.top_void}></div>
+            <div className={styles.banner}>
                 <Banner />
             </div>
+            <main className={styles.main}>
+                <MainGrid />
+            </main>
     </>
   );
 }

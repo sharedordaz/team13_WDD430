@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 
-export default function NavBar() {
+export default function Banner() {
   return (
 <Image
               src="/banner.jpg"
@@ -9,7 +9,7 @@ export default function NavBar() {
               className={styles.vercelLogo}
               layout="responsive"
               width={1360}
-              height={600}
+              height={500}
               priority
             />
 )}
