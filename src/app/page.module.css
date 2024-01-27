@@ -287,3 +287,69 @@
     transform: rotate(0deg);
   }
 }
+
+/* footer*/
+.footer {
+  
+  background-color: #534B52AA;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  border: solid 3px black;
+}
+
+.footerContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.socialMedia img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.companyLogo img {
+  width: 135px; /* Ajusta el tamaño del logotipo de la empresa según tu preferencia */
+  height: 125px;
+  margin-bottom: 10px;
+}
+
+.socialMedia img:hover{
+  border-bottom: solid 4px whitesmoke;
+}
+.shoppingCart img{
+  width: 65px;
+  height: 65px;
+}
+.shoppingCart img:hover{
+  border-bottom: solid 4px whitesmoke;
+}
+
+/* fprm*/
+
+
+@media only screen and (max-width: 768px) {
+  .footerContent {
+    flex-direction: row; /* Vuelve a la dirección de fila para pantallas más grandes */
+    justify-content: space-around;
+  }
+
+  .socialMedia img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  .companyLogo img {
+    width: 100px; /* Ajusta el tamaño del logotipo de la empresa según tu preferencia */
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+}  
+
