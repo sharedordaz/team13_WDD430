@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import Banner from '@/app/banner'; 
-import MainGrid from '@/app/main-grid';
+import Banner from '@/app/banner';
+import MainGrid from '@/app/grid/main-grid'
 /*
 TODO:
 -Shopping Cart (Douglas Fabricio)
@@ -25,6 +25,7 @@ export default function Home() {
             <main className={styles.main}>
                 <MainGrid />
             </main>
+
     </>
   );
 }

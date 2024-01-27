@@ -1,0 +1,37 @@
+{
+  "artItems": [
+    {
+      "id": 1,
+      "name": "Abstract Landscape",
+      "artist": "John Smith",
+      "price": 200,
+      "description": "A beautiful abstract landscape painting.",
+      "image": "abstract-landscape.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Sculpture of Serenity",
+      "artist": "Emily Jones",
+      "price": 350,
+      "description": "A serene sculpture capturing the essence of nature.",
+      "image": "serenity-sculpture.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Modern Art Print",
+      "artist": "Alex Rodriguez",
+      "price": 50,
+      "description": "A high-quality print of a modern art masterpiece.",
+      "image": "modern-art-print.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Portrait of Elegance",
+      "artist": "Sophia Miller",
+      "price": 180,
+      "description": "An elegant portrait capturing the beauty of a subject.",
+      "image": "elegance-portrait.jpg"
+    }
+  ]
+}
+
