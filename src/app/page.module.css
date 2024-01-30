@@ -2,14 +2,15 @@
 .main {
   margin-top: 30%;
   display: grid;
-  grid-template: repeat(auto-fill, minmax(300px, 1fr))
-   / repeat(auto-fill, minmax(300px, 1fr));
+  grid-template: repeat(auto-fill, minmax(20%, 1fr))
+   / repeat(auto-fill, minmax(20%, 1fr));
   gap: 10px;
 }
 
 .main img {
-   max-width:200px;
-   max-height: 200px;
+   max-width:60%;
+   max-height: 60%;
+
 }
 
 .top_void{
@@ -69,6 +70,11 @@
   border: 1px solid rgba(var(--card-border-rgb), 0);
   transition: background 200ms, border 200ms;
   text-align: center;
+}
+
+.card p{
+    font-size: 10rem;
+    padding: 2rem;
 }
 
 .card span {

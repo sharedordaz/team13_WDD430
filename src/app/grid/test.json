@@ -31,6 +31,214 @@
       "price": 180,
       "description": "An elegant portrait capturing the beauty of a subject.",
       "image": "elegance-portrait.jpg"
+    },
+        {
+      "id": 11,
+      "name": "Dynamic Brushstrokes",
+      "artist": "Grace Bennett",
+      "price": 150,
+      "description": "Expressive and dynamic brushstrokes that create a sense of movement.",
+      "image": "dynamic-brushstrokes.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Pastel Dreams",
+      "artist": "Leo Chambers",
+      "price": 170,
+      "description": "Dreamy and pastel-colored artwork that evokes a sense of tranquility.",
+      "image": "pastel-dreams.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Timeless Portraits",
+      "artist": "Sophie Turner",
+      "price": 200,
+      "description": "Portraits that capture the essence of timeless beauty.",
+      "image": "timeless-portraits.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Rhythmic Geometrics",
+      "artist": "Ella Martinez",
+      "price": 160,
+      "description": "Geometric patterns arranged in a rhythmic and harmonious composition.",
+      "image": "rhythmic-geometrics.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Urban Reflections",
+      "artist": "Oscar Coleman",
+      "price": 180,
+      "description": "Reflective urban scenes that capture the essence of city life.",
+      "image": "urban-reflections.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Mystical Forest",
+      "artist": "Aria Thompson",
+      "price": 210,
+      "description": "An enchanting painting that transports you to a mystical forest.",
+      "image": "mystical-forest.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Digital Harmony",
+      "artist": "Alex Reynolds",
+      "price": 190,
+      "description": "A harmonious blend of digital elements in a captivating artwork.",
+      "image": "digital-harmony.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Sunset Serenity",
+      "artist": "Luna Thompson",
+      "price": 180,
+      "description": "A serene portrayal of a breathtaking sunset.",
+      "image": "sunset-serenity.jpg"
+    },
+    {
+      "id": 19,
+      "name": "Futuristic Portraits",
+      "artist": "Maxwell Adams",
+      "price": 200,
+      "description": "Portraits with a futuristic and avant-garde aesthetic.",
+      "image": "futuristic-portraits.jpg"
+    },
+    {
+      "id": 20,
+      "name": "Ethereal Beauty",
+      "artist": "Violet Rodriguez",
+      "price": 160,
+      "description": "Art that captures the ethereal beauty of its subjects.",
+      "image": "ethereal-beauty.jpg"
+    },
+    {
+      "id": 21,
+      "name": "Whimsical Fantasy",
+      "artist": "Finn Anderson",
+      "price": 180,
+      "description": "Fantastical scenes brought to life through whimsical art.",
+      "image": "whimsical-fantasy.jpg"
+    },
+    {
+      "id": 22,
+      "name": "Retro Revival",
+      "artist": "Nina Foster",
+      "price": 170,
+      "description": "A nostalgic journey with retro-inspired artwork.",
+      "image": "retro-revival.jpg"
+    },
+    {
+      "id": 23,
+      "name": "Celestial Abstracts",
+      "artist": "Sophia Miller",
+      "price": 190,
+      "description": "Abstract artwork inspired by celestial forms.",
+      "image": "celestial-abstracts.jpg"
+    },
+    {
+      "id": 24,
+      "name": "Cityscape Impressions",
+      "artist": "Sophia Miller",
+      "price": 200,
+      "description": "Impressionistic depictions of urban landscapes.",
+      "image": "cityscape-impressions.jpg"
+    },
+    {
+      "id": 25,
+      "name": "Ocean Serenity",
+      "artist": "Sophia Miller",
+      "price": 180,
+      "description": "Tranquil scenes capturing the serenity of the ocean.",
+      "image": "ocean-serenity.jpg"
+    },
+    {
+      "id": 26,
+      "name": "Abstract Realms",
+      "artist": "Sophia Miller",
+      "price": 210,
+      "description": "Exploration of abstract realms and dimensions.",
+      "image": "abstract-realms.jpg"
+    },
+    {
+      "id": 27,
+      "name": "Whimsical Wildlife",
+      "artist": "Sophia Miller",
+      "price": 170,
+      "description": "Playful and whimsical depictions of wildlife.",
+      "image": "whimsical-wildlife.jpg"
+    },
+    {
+      "id": 28,
+      "name": "Metropolitan Chaos",
+      "artist": "Sophia Miller",
+      "price": 190,
+      "description": "Chaos and energy in the heart of a bustling metropolis.",
+      "image": "metropolitan-chaos.jpg"
+    },
+    {
+      "id": 29,
+      "name": "Ethereal Landscapes",
+      "artist": "Sophia Miller",
+      "price": 180,
+      "description": "Landscapes with an ethereal and otherworldly quality.",
+      "image": "ethereal-landscapes.jpg"
+    },
+    {
+      "id": 30,
+      "name": "Abstract Fusion",
+      "artist": "Sophia Miller",
+      "price": 200,
+      "description": "Fusion of abstract elements in a visually compelling artwork.",
+      "image": "abstract-fusion.jpg"
+    },
+        {
+      "id": 5,
+      "name": "Celestial Wonders",
+      "artist": "Stella Richards",
+      "price": 190,
+      "description": "Art inspired by the beauty of celestial bodies and cosmic wonders.",
+      "image": "celestial-wonders.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Modern Metropolis",
+      "artist": "Ethan Foster",
+      "price": 170,
+      "description": "A modern and vibrant portrayal of a bustling metropolis.",
+      "image": "modern-metropolis.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Floral Symphony",
+      "artist": "Isabella Diaz",
+      "price": 160,
+      "description": "A symphony of colors and shapes inspired by floral beauty.",
+      "image": "floral-symphony.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Futuristic Abstractions",
+      "artist": "Adrian Fisher",
+      "price": 210,
+      "description": "Abstract art with a futuristic and avant-garde twist.",
+      "image": "futuristic-abstractions.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Wildlife Elegance",
+      "artist": "Zoe Thompson",
+      "price": 180,
+      "description": "Elegant portrayals of wildlife in their natural habitats.",
+      "image": "wildlife-elegance.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Neon Noir",
+      "artist": "Miles Harris",
+      "price": 190,
+      "description": "A fusion of neon lights and noir aesthetics in a captivating artwork.",
+      "image": "neon-noir.jpg"
     }
   ]
 }
