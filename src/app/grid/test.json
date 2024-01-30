@@ -122,6 +122,15 @@
           "artCategory": "Sculpture"
         },
         {
+          "id": 25,
+          "name": "Wooden Wildlife Carvings",
+          "artist": "Leo Diaz",
+          "price": 190,
+          "description": "Detailed wildlife carvings skillfully crafted from wood.",
+          "image": "wooden-wildlife-carvings.jpg",
+          "artCategory": "Sculpture"
+        },
+        {
           "id": 27,
           "name": "Metallic Abstract Forms",
           "price": 160,
@@ -198,6 +207,68 @@
           "description": "A fusion of neon lights and noir aesthetics in a captivating artwork.",
           "image": "neon-noir.jpg",
           "artCategory": "Craft"
+        }
+      ]
+    },
+    {
+      "name": "Maxwell Smith",
+      "picture": "maxwell-smith.jpg",
+      "personalStories": "Maxwell Smith is an artist known for dreamy and pastel-colored artwork that evokes a sense of tranquility...",
+      "artItems": [
+        {
+          "id": 6,
+          "name": "Pastel Dreams",
+          "price": 170,
+          "description": "Dreamy and pastel-colored artwork that evokes a sense of tranquility.",
+          "image": "pastel-dreams.jpg",
+          "artCategory": "Conceptual Art"
+        },
+        {
+          "id": 14,
+          "name": "Ethereal Beauty",
+          "price": 160,
+          "description": "Art that captures the ethereal beauty of its subjects.",
+          "image": "ethereal-beauty.jpg",
+          "artCategory": "Conceptual Art"
+        },
+        {
+          "id": 15,
+          "name": "Whimsical Fantasy",
+          "price": 180,
+          "description": "Fantastical scenes brought to life through whimsical art.",
+          "image": "whimsical-fantasy.jpg",
+          "artCategory": "Conceptual Art"
+        }
+      ]
+    },
+    {
+      "name": "Olivia Wilson",
+      "picture": "olivia-wilson.jpg",
+      "personalStories": "Olivia Wilson is an artist known for her high-quality prints of modern art masterpieces...",
+      "artItems": [
+        {
+          "id": 3,
+          "name": "Modern Art Print",
+          "price": 50,
+          "description": "A high-quality print of a modern art masterpiece.",
+          "image": "modern-art-print.jpg",
+          "artCategory": "Conceptual Art"
+        },
+        {
+          "id": 11,
+          "name": "Digital Harmony",
+          "price": 190,
+          "description": "A harmonious blend of digital elements in a captivating artwork.",
+          "image": "digital-harmony.jpg",
+          "artCategory": "Conceptual Art"
+        },
+        {
+          "id": 13,
+          "name": "Futuristic Portraits",
+          "price": 200,
+          "description": "Portraits with a futuristic and avant-garde aesthetic.",
+          "image": "futuristic-portraits.jpg",
+          "artCategory": "Conceptual Art"
         }
       ]
     },
