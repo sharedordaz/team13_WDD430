@@ -12,6 +12,7 @@ export default function createCard(item: any){
       alt={item.description}
     />
         <p>{item.description}</p>
+        <a href= "#">{item.artist}</a>
         <p>Price: ${item.price} </p>
 
     </div>
