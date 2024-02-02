@@ -6,9 +6,16 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "json_save": "node src/app/database/json_save.js",
+    "start_withDB": "node server.js"
   },
   "dependencies": {
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "http": "^0.0.1-security",
+    "https": "^1.0.0",
+    "mongodb": "^6.3.0",
     "next": "^14.1.0",
     "react": "^18",
     "react-dom": "^18",
