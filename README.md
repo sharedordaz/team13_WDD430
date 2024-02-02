@@ -1,3 +1,5 @@
+## TO init the test, write npm run start_withDB
+
 # Project Purpose
 The project is meant to create a web application where artisans and crafters can be able to showcase and sell their handcrafted items. Is meant to be a virtual marketplace that connects the creators with the customers. 
 The application focuses on fostering a sense of community, supporting local artisans, and promoting sustainable consumption. Handcrafted Haven aims to revolutionize the way handcrafted items are discovered, appreciated, and acquired. 

@@ -1,5 +1,6 @@
 import createCard from "./card";
 
+
 export default async function MainGrid() {
   const allCards = await myfetch();
   //console.log("ALLCARDS:", allCards)
@@ -7,7 +8,8 @@ export default async function MainGrid() {
 }
 
 async function myfetch() {
-  const url = 'http://localhost:3000/database';
+  const baseurl = 'http://localhost:3000';
+  const url = baseurl + '/database';
 
   try {
     const response = await fetch(url);
