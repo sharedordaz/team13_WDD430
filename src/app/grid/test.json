@@ -1,245 +1,315 @@
 {
-  "artItems": [
+  "artists": [
     {
-      "id": 1,
-      "name": "Abstract Landscape",
-      "artist": "John Smith",
-      "price": 200,
-      "description": "A beautiful abstract landscape painting.",
-      "image": "abstract-landscape.jpg"
-    },
-    {
-      "id": 2,
-      "name": "Sculpture of Serenity",
-      "artist": "Emily Jones",
-      "price": 350,
-      "description": "A serene sculpture capturing the essence of nature.",
-      "image": "serenity-sculpture.jpg"
-    },
-    {
-      "id": 3,
-      "name": "Modern Art Print",
-      "artist": "Alex Rodriguez",
-      "price": 50,
-      "description": "A high-quality print of a modern art masterpiece.",
-      "image": "modern-art-print.jpg"
-    },
-    {
-      "id": 4,
-      "name": "Portrait of Elegance",
-      "artist": "Sophia Miller",
-      "price": 180,
-      "description": "An elegant portrait capturing the beauty of a subject.",
-      "image": "elegance-portrait.jpg"
-    },
+      "name": "Emma White",
+      "picture": "emma-white.jpg",
+      "personalStories": "Emma White is a renowned artist known for her unique approach to abstract landscapes...",
+      "artItems": [
         {
-      "id": 11,
-      "name": "Dynamic Brushstrokes",
-      "artist": "Grace Bennett",
-      "price": 150,
-      "description": "Expressive and dynamic brushstrokes that create a sense of movement.",
-      "image": "dynamic-brushstrokes.jpg"
-    },
-    {
-      "id": 12,
-      "name": "Pastel Dreams",
-      "artist": "Leo Chambers",
-      "price": 170,
-      "description": "Dreamy and pastel-colored artwork that evokes a sense of tranquility.",
-      "image": "pastel-dreams.jpg"
-    },
-    {
-      "id": 13,
-      "name": "Timeless Portraits",
-      "artist": "Sophie Turner",
-      "price": 200,
-      "description": "Portraits that capture the essence of timeless beauty.",
-      "image": "timeless-portraits.jpg"
-    },
-    {
-      "id": 14,
-      "name": "Rhythmic Geometrics",
-      "artist": "Ella Martinez",
-      "price": 160,
-      "description": "Geometric patterns arranged in a rhythmic and harmonious composition.",
-      "image": "rhythmic-geometrics.jpg"
-    },
-    {
-      "id": 15,
-      "name": "Urban Reflections",
-      "artist": "Oscar Coleman",
-      "price": 180,
-      "description": "Reflective urban scenes that capture the essence of city life.",
-      "image": "urban-reflections.jpg"
-    },
-    {
-      "id": 16,
-      "name": "Mystical Forest",
-      "artist": "Aria Thompson",
-      "price": 210,
-      "description": "An enchanting painting that transports you to a mystical forest.",
-      "image": "mystical-forest.jpg"
-    },
-    {
-      "id": 17,
-      "name": "Digital Harmony",
-      "artist": "Alex Reynolds",
-      "price": 190,
-      "description": "A harmonious blend of digital elements in a captivating artwork.",
-      "image": "digital-harmony.jpg"
-    },
-    {
-      "id": 18,
-      "name": "Sunset Serenity",
-      "artist": "Luna Thompson",
-      "price": 180,
-      "description": "A serene portrayal of a breathtaking sunset.",
-      "image": "sunset-serenity.jpg"
-    },
-    {
-      "id": 19,
-      "name": "Futuristic Portraits",
-      "artist": "Maxwell Adams",
-      "price": 200,
-      "description": "Portraits with a futuristic and avant-garde aesthetic.",
-      "image": "futuristic-portraits.jpg"
-    },
-    {
-      "id": 20,
-      "name": "Ethereal Beauty",
-      "artist": "Violet Rodriguez",
-      "price": 160,
-      "description": "Art that captures the ethereal beauty of its subjects.",
-      "image": "ethereal-beauty.jpg"
-    },
-    {
-      "id": 21,
-      "name": "Whimsical Fantasy",
-      "artist": "Finn Anderson",
-      "price": 180,
-      "description": "Fantastical scenes brought to life through whimsical art.",
-      "image": "whimsical-fantasy.jpg"
-    },
-    {
-      "id": 22,
-      "name": "Retro Revival",
-      "artist": "Nina Foster",
-      "price": 170,
-      "description": "A nostalgic journey with retro-inspired artwork.",
-      "image": "retro-revival.jpg"
-    },
-    {
-      "id": 23,
-      "name": "Celestial Abstracts",
-      "artist": "Sophia Miller",
-      "price": 190,
-      "description": "Abstract artwork inspired by celestial forms.",
-      "image": "celestial-abstracts.jpg"
-    },
-    {
-      "id": 24,
-      "name": "Cityscape Impressions",
-      "artist": "Sophia Miller",
-      "price": 200,
-      "description": "Impressionistic depictions of urban landscapes.",
-      "image": "cityscape-impressions.jpg"
-    },
-    {
-      "id": 25,
-      "name": "Ocean Serenity",
-      "artist": "Sophia Miller",
-      "price": 180,
-      "description": "Tranquil scenes capturing the serenity of the ocean.",
-      "image": "ocean-serenity.jpg"
-    },
-    {
-      "id": 26,
-      "name": "Abstract Realms",
-      "artist": "Sophia Miller",
-      "price": 210,
-      "description": "Exploration of abstract realms and dimensions.",
-      "image": "abstract-realms.jpg"
-    },
-    {
-      "id": 27,
-      "name": "Whimsical Wildlife",
-      "artist": "Sophia Miller",
-      "price": 170,
-      "description": "Playful and whimsical depictions of wildlife.",
-      "image": "whimsical-wildlife.jpg"
-    },
-    {
-      "id": 28,
-      "name": "Metropolitan Chaos",
-      "artist": "Sophia Miller",
-      "price": 190,
-      "description": "Chaos and energy in the heart of a bustling metropolis.",
-      "image": "metropolitan-chaos.jpg"
-    },
-    {
-      "id": 29,
-      "name": "Ethereal Landscapes",
-      "artist": "Sophia Miller",
-      "price": 180,
-      "description": "Landscapes with an ethereal and otherworldly quality.",
-      "image": "ethereal-landscapes.jpg"
-    },
-    {
-      "id": 30,
-      "name": "Abstract Fusion",
-      "artist": "Sophia Miller",
-      "price": 200,
-      "description": "Fusion of abstract elements in a visually compelling artwork.",
-      "image": "abstract-fusion.jpg"
-    },
+          "id": 1,
+          "name": "Abstract Landscape",
+          "price": 200,
+          "description": "A beautiful abstract landscape painting.",
+          "image": "abstract-landscape.jpg",
+          "artCategory": "Paint"
+        },
         {
-      "id": 5,
-      "name": "Celestial Wonders",
-      "artist": "Stella Richards",
-      "price": 190,
-      "description": "Art inspired by the beauty of celestial bodies and cosmic wonders.",
-      "image": "celestial-wonders.jpg"
+          "id": 12,
+          "name": "Sunset",
+          "price": 180,
+          "description": "A serene portrayal of a breathtaking sunset.",
+          "image": "sunset-serenity.jpg",
+          "artCategory": "Paint"
+        },
+        {
+          "id": 18,
+          "name": "Cityscape Impressions",
+          "price": 200,
+          "description": "Impressionistic depictions of urban landscapes.",
+          "image": "cityscape-impressions.jpg",
+          "artCategory": "Paint"
+        }
+      ]
     },
     {
-      "id": 6,
-      "name": "Modern Metropolis",
-      "artist": "Ethan Foster",
-      "price": 170,
-      "description": "A modern and vibrant portrayal of a bustling metropolis.",
-      "image": "modern-metropolis.jpg"
+      "name": "Aiden Scott",
+      "picture": "aiden-scott.jpg",
+      "personalStories": "Aiden Scott is a talented sculptor who finds inspiration in the serenity of nature...",
+      "artItems": [
+        {
+          "id": 2,
+          "name": "Sculpture of Serenity",
+          "price": 350,
+          "description": "A serene sculpture capturing the essence of nature.",
+          "image": "serenity-sculpture.jpg",
+          "artCategory": "Sculpture"
+        },
+        {
+          "id": 19,
+          "name": "Wooden Statue Ensemble",
+          "price": 180,
+          "description": "An ensemble of wooden statues showcasing craftsmanship.",
+          "image": "wooden-statue-ensemble.jpg",
+          "artCategory": "Sculpture"
+        },
+        {
+          "id": 22,
+          "name": "Ceramic Figurines",
+          "price": 190,
+          "description": "Delicate figurines crafted from high-quality ceramics.",
+          "image": "ceramic-figurines.jpg",
+          "artCategory": "Sculpture"
+        },
+        {
+          "id": 24,
+          "name": "Abstract Glass Sculpture",
+          "price": 200,
+          "description": "A captivating abstract sculpture crafted from glass materials.",
+          "image": "abstract-glass-sculpture.jpg",
+          "artCategory": "Sculpture"
+        }
+      ]
     },
     {
-      "id": 7,
-      "name": "Floral Symphony",
-      "artist": "Isabella Diaz",
-      "price": 160,
-      "description": "A symphony of colors and shapes inspired by floral beauty.",
-      "image": "floral-symphony.jpg"
+      "name": "Jackson Thompson",
+      "picture": "jackson-thompson.jpg",
+      "personalStories": "Jackson Thompson is a skilled painter known for his elegant portraits capturing the beauty of his subjects...",
+      "artItems": [
+        {
+          "id": 4,
+          "name": "Portrait of Elegance",
+          "price": 180,
+          "description": "An elegant portrait capturing the beauty of a subject.",
+          "image": "elegance-portrait.jpg",
+          "artCategory": "Paint"
+        }
+      ]
     },
     {
-      "id": 8,
-      "name": "Futuristic Abstractions",
-      "artist": "Adrian Fisher",
-      "price": 210,
-      "description": "Abstract art with a futuristic and avant-garde twist.",
-      "image": "futuristic-abstractions.jpg"
+      "name": "Rosie Miller",
+      "picture": "rosie-miller.jpg",
+      "personalStories": "Rosie Miller is an expressive artist known for her dynamic brushstrokes that create a sense of movement...",
+      "artItems": [
+        {
+          "id": 5,
+          "name": "Dynamic Brushstrokes",
+          "price": 150,
+          "description": "Expressive and dynamic brushstrokes that create a sense of movement.",
+          "image": "dynamic-brushstrokes.jpg",
+          "artCategory": "Paint"
+        },
+        {
+          "id": 23,
+          "name": "Ethereal Landscapes",
+          "price": 180,
+          "description": "Landscapes with an ethereal and otherworldly quality.",
+          "image": "ethereal-landscapes.jpg",
+          "artCategory": "Paint"
+        }
+      ]
     },
     {
-      "id": 9,
-      "name": "Wildlife Elegance",
-      "artist": "Zoe Thompson",
-      "price": 180,
-      "description": "Elegant portrayals of wildlife in their natural habitats.",
-      "image": "wildlife-elegance.jpg"
+      "name": "Leo Diaz",
+      "picture": "leo-diaz.jpg",
+      "personalStories": "Leo Diaz is an artist specializing in creating elegant bronze sculptures that showcase artistic finesse...",
+      "artItems": [
+        {
+          "id": 10,
+          "name": "Bronze Elegance",
+          "price": 210,
+          "description": "An elegant bronze sculpture showcasing artistic finesse.",
+          "image": "bronze-elegance.jpg",
+          "artCategory": "Sculpture"
+        },
+        {
+          "id": 25,
+          "name": "Wooden Wildlife Carvings",
+          "artist": "Leo Diaz",
+          "price": 190,
+          "description": "Detailed wildlife carvings skillfully crafted from wood.",
+          "image": "wooden-wildlife-carvings.jpg",
+          "artCategory": "Sculpture"
+        },
+        {
+          "id": 27,
+          "name": "Metallic Abstract Forms",
+          "price": 160,
+          "description": "Abstract forms sculpted from metallic materials, creating a visually dynamic piece.",
+          "image": "metallic-abstract-forms.jpg",
+          "artCategory": "Sculpture"
+        },
+        {
+          "id": 28,
+          "name": "Contemporary Metal Sculpture",
+          "price": 210,
+          "description": "A contemporary sculpture crafted from metal, exploring modern forms and concepts.",
+          "image": "contemporary-metal-sculpture.jpg",
+          "artCategory": "Sculpture"
+        }
+      ]
     },
     {
-      "id": 10,
-      "name": "Neon Noir",
-      "artist": "Miles Harris",
-      "price": 190,
-      "description": "A fusion of neon lights and noir aesthetics in a captivating artwork.",
-      "image": "neon-noir.jpg"
+      "name": "Olivia Wilson",
+      "picture": "olivia-wilson.jpg",
+      "personalStories": "Olivia Wilson is an artist known for her high-quality prints of modern art masterpieces...",
+      "artItems": [
+        {
+          "id": 3,
+          "name": "Modern Art Print",
+          "price": 50,
+          "description": "A high-quality print of a modern art masterpiece.",
+          "image": "modern-art-print.jpg",
+          "artCategory": "Conceptual Art"
+        },
+        {
+          "id": 11,
+          "name": "Digital Harmony",
+          "price": 190,
+          "description": "A harmonious blend of digital elements in a captivating artwork.",
+          "image": "digital-harmony.jpg",
+          "artCategory": "Conceptual Art"
+        },
+        {
+          "id": 13,
+          "name": "Futuristic Portraits",
+          "price": 200,
+          "description": "Portraits with a futuristic and avant-garde aesthetic.",
+          "image": "futuristic-portraits.jpg",
+          "artCategory": "Conceptual Art"
+        }
+      ]
+    },
+    {
+      "name": "Fred Reynolds",
+      "picture": "fred-reynolds.jpg",
+      "personalStories": "Fred Reynolds is an artist specializing in crafting beautiful handcrafted pottery with intricate designs...",
+      "artItems": [
+        {
+          "id": 7,
+          "name": "Handcrafted Pottery",
+          "price": 200,
+          "description": "Beautiful handcrafted pottery with intricate designs.",
+          "image": "handcrafted-pottery.jpg",
+          "artCategory": "Craft"
+        },
+        {
+          "id": 29,
+          "name": "Wildlife Elegance",
+          "price": 180,
+          "description": "Elegant portrayals of wildlife in their natural habitats.",
+          "image": "wildlife-elegance.jpg",
+          "artCategory": "Craft"
+        },
+        {
+          "id": 30,
+          "name": "Neon Lights",
+          "price": 190,
+          "description": "A fusion of neon lights and noir aesthetics in a captivating artwork.",
+          "image": "neon-noir.jpg",
+          "artCategory": "Craft"
+        }
+      ]
+    },
+    {
+      "name": "Maxwell Smith",
+      "picture": "maxwell-smith.jpg",
+      "personalStories": "Maxwell Smith is an artist known for dreamy and pastel-colored artwork that evokes a sense of tranquility...",
+      "artItems": [
+        {
+          "id": 6,
+          "name": "Pastel Dreams",
+          "price": 170,
+          "description": "Dreamy and pastel-colored artwork that evokes a sense of tranquility.",
+          "image": "pastel-dreams.jpg",
+          "artCategory": "Conceptual Art"
+        },
+        {
+          "id": 14,
+          "name": "Ethereal Beauty",
+          "price": 160,
+          "description": "Art that captures the ethereal beauty of its subjects.",
+          "image": "ethereal-beauty.jpg",
+          "artCategory": "Conceptual Art"
+        },
+        {
+          "id": 15,
+          "name": "Whimsical Fantasy",
+          "price": 180,
+          "description": "Fantastical scenes brought to life through whimsical art.",
+          "image": "whimsical-fantasy.jpg",
+          "artCategory": "Conceptual Art"
+        }
+      ]
+    },
+    {
+      "name": "Olivia Wilson",
+      "picture": "olivia-wilson.jpg",
+      "personalStories": "Olivia Wilson is an artist known for her high-quality prints of modern art masterpieces...",
+      "artItems": [
+        {
+          "id": 3,
+          "name": "Modern Art Print",
+          "price": 50,
+          "description": "A high-quality print of a modern art masterpiece.",
+          "image": "modern-art-print.jpg",
+          "artCategory": "Conceptual Art"
+        },
+        {
+          "id": 11,
+          "name": "Digital Harmony",
+          "price": 190,
+          "description": "A harmonious blend of digital elements in a captivating artwork.",
+          "image": "digital-harmony.jpg",
+          "artCategory": "Conceptual Art"
+        },
+        {
+          "id": 13,
+          "name": "Futuristic Portraits",
+          "price": 200,
+          "description": "Portraits with a futuristic and avant-garde aesthetic.",
+          "image": "futuristic-portraits.jpg",
+          "artCategory": "Conceptual Art"
+        }
+      ]
+    },
+    {
+      "name": "David Coleman",
+      "picture": "david-coleman.jpg",
+      "personalStories": "David Coleman is an artist known for creating quilted masterpieces that blend colors and patterns...",
+      "artItems": [
+        {
+          "id": 9,
+          "name": "Quilted Masterpiece",
+          "price": 180,
+          "description": "A quilted masterpiece blending colors and patterns.",
+          "image": "quilted-masterpiece.jpg",
+          "artCategory": "Conceptual Art"
+        },
+        {
+          "id": 16,
+          "name": "Retro Revival",
+          "price": 170,
+          "description": "A nostalgic journey with retro-inspired artwork.",
+          "image": "retro-revival.jpg",
+          "artCategory": "Craft"
+        },
+        {
+          "id": 26,
+          "name": "Modern Metropolis",
+          "price": 170,
+          "description": "A modern and vibrant portrayal of a bustling metropolis.",
+          "image": "modern-metropolis.jpg",
+          "artCategory": "Craft"
+        },
+        {
+          "id": 21,
+          "name": "Whimsical Wildlife",
+          "price": 170,
+          "description": "Playful and whimsical depictions of wildlife.",
+          "image": "whimsical-wildlife.jpg",
+          "artCategory": "Craft"
+        }
+      ]
     }
   ]
 }
-
