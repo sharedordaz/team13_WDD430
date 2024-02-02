@@ -3,7 +3,7 @@ const { MongoClient, ServerApiVersion } = require('mongodb');
 
 const server = http.createServer(async (req, res) => {
     if (req.url === '/database') {
-        try {
+    try {
             const uri = "mongodb+srv://readWrite:handcraftHaven@cluster0.nzpdodr.mongodb.net/";
             const client = new MongoClient(uri, { serverApi: ServerApiVersion.v1 });
 

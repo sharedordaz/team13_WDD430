@@ -6,6 +6,7 @@ const app = next({ dev });
 const handle = app.getRequestHandler();
 
 const { connectToDatabase } = require('./database/connect.js'); // Adjust the path accordingly
+const { databasetoJSON } = require('./database/read_db.js')
 
 const port = 3000;
 
@@ -15,15 +16,21 @@ app.prepare().then(() => {
   const server = express();
 
   server.get('/database', (req, res) => {
+        try{
+             databasetoJSON(req, res);
+        }catch(error){
+        console.log('/database error: ', error)
+        }
+    console.log("On /database")
+        });
+
+  server.get('*', (req, res) => {
     try{
         connectToDatabase()
 
     }catch(error){
         console.error('Error: ', error)
     }
-        });
-
-  server.get('*', (req, res) => {
     return handle(req, res);
   });
 
