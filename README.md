@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Project Purpose
 The project is meant to create a web application where artisans and crafters can be able to showcase and sell their handcrafted items. Is meant to be a virtual marketplace that connects the creators with the customers. 
 The application focuses on fostering a sense of community, supporting local artisans, and promoting sustainable consumption. Handcrafted Haven aims to revolutionize the way handcrafted items are discovered, appreciated, and acquired. 
@@ -70,4 +69,3 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
->>>>>>> master
