@@ -1,6 +1,6 @@
 import styles from "@/app/page.module.css";
-
 import Image from 'next/image'
+
 export default function createCard(item: any){
     return (
     <div className={styles.card}>
@@ -14,7 +14,6 @@ export default function createCard(item: any){
         <p>{item.description}</p>
         <a href= "#">{item.artist}</a>
         <p>Price: ${item.price} </p>
-
     </div>
 
 
