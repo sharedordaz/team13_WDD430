@@ -1,18 +1,28 @@
 import createCard from "./card";
 import { Artist, ArtItem } from './types';
 
+import { headers } from 'next/headers';
+
 
 export default async function MainGrid() {
-  const allCards = await myfetch();
-  //console.log("ALLCARDS:", allCards)
+
+  const headersList = headers();
+  const host: string | null = headersList.get('host');
+  const url = headersList.get('next-url');
+
+  const allCards = await myfetch(host);
+  console.log("HOST:", host, '\nURL:', url);
   return allCards;
 }
 
 export const artistArray: Artist[] = [];
 
-async function myfetch() {
-  const baseurl = 'http://localhost:3000';
-  const url = baseurl + '/database?_=' + Date.now();
+async function myfetch(host: string | null) {
+
+  const baseUrl = 'http://' + host;
+  //const baseUrl = 'http://localhost:3000';
+  const url = baseUrl + '/database?_=' + Date.now();
+  console.log(url);
 
   try {
     const response = await fetch(url);
