@@ -30,7 +30,7 @@
     "typescript": "5.3.3"
   },
   "description": "WDD430 project from team 13",
-  "proxy": "http://localhost:3000",
+  "proxy": "http://localhost:5000",
   "main": "index.js",
   "author": "",
   "license": "ISC"
