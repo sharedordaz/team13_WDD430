@@ -1,7 +1,8 @@
 import styles from "@/app/page.module.css";
-import Image from 'next/image'
-
-export default function createCard(item: any){
+import Image from 'next/image';
+import { Artist, ArtItem } from './types';
+//TODO: Add an artist argument to createCard()
+export default function createCard(item: ArtItem, artist: string){
     return (
     <div className={styles.card}>
         <h4>{item.name}</h4>
@@ -12,10 +13,14 @@ export default function createCard(item: any){
       alt={item.description}
     />
         <p>{item.description}</p>
-        <a href= "#">{item.artist}</a>
+        <a href= "#">{artist}</a>
         <p>Price: ${item.price} </p>
     </div>
 
 
     )
+}
+
+export function artistCard(item: Artist){
+
     }

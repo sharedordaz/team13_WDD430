@@ -1,4 +1,5 @@
 import createCard from "./card";
+import { Artist, ArtItem } from './types';
 
 
 export default async function MainGrid() {
@@ -7,9 +8,11 @@ export default async function MainGrid() {
   return allCards;
 }
 
+export const artistArray: Artist[] = [];
+
 async function myfetch() {
   const baseurl = 'http://localhost:3000';
-  const url = baseurl + '/database';
+  const url = baseurl + '/database?_=' + Date.now();
 
   try {
     const response = await fetch(url);
@@ -19,10 +22,27 @@ async function myfetch() {
     }
 
     const jsonData = await response.json();
-    //console.log("Reading this:\n", jsonData);
+    //console.log("Reading this:\n", JSON.stringify(jsonData));
 
-    const artItems = jsonData[0].artItems;
-    const allCards = artItems.map((artItem: any) => createCard(artItem));
+    const artists = jsonData[0].artists;
+
+    const allCards: JSX.Element[] = [];
+    //console.log('ARTISTS:' + artists)
+    artists.forEach((artist: Artist) => {
+        let artItems = artist.artItems;
+        //console.log("--------------\n" + artist.name + artItems)
+        artItems.forEach((artItem: ArtItem) => {
+            const card = createCard(artItem, artist.name)
+            allCards.push(card);
+
+        });
+
+
+        artistArray.push(artist)
+    });
+
+    //console.log(artistArray)
+
     //console.log(allCards)
 
     return allCards;
