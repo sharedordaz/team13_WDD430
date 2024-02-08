@@ -28,6 +28,8 @@ export default function Home() {
     
   return (
     <>
+      <link rel="icon" href="path/to/favicon.ico" />
+
             <div className= {styles.top_void}></div>
             <div className={styles.banner}>
                 <Banner />

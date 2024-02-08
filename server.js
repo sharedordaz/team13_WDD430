@@ -8,7 +8,7 @@ const handle = app.getRequestHandler();
 const { connectToDatabase } = require('./database/connect.js'); // Adjust the path accordingly
 const { databasetoJSON } = require('./database/read_db.js')
 
-const port = 5000;
+const port = 3000;
 
 
 
