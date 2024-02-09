@@ -5,7 +5,7 @@ export default function NavBar() {
   return (
   <nav className={styles.nav}>
       <ul>
-        <li><a href="#">&#10084; Favorites</a></li>
+        <li><Link href="/favorites">&#10084; Favorites</Link></li>
         <li><a href="#">&#9993; Contact Us</a></li>
     </ul>
     <div className={styles.shoppingCart}>

@@ -12,13 +12,13 @@ export default function Footer() {
         <p>&#169; 2024 Handcrafted Haven. All rights reserved.</p>
         <div className={styles.socialMedia}>
           {/* Logos de redes sociales */}
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/" rel="noopener noreferrer">
             <img src="facebook.png" alt="Facebook" />
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a href="https://twitter.com/" rel="noopener noreferrer">
             <img src="twitter.jpg" alt="Twitter" />
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/" rel="noopener noreferrer">
             <img src="instagram.png" alt="Instagram" />
           </a>
         </div>

@@ -1,10 +1,10 @@
+import React from 'react';
 import styles from "@/app/page.module.css";
-import Link from "next/link";
 import Image from "next/image";
 
-export default function createCard(item: any) {
+export default function createFavorites(item: any) {
   return (
-    <div className={styles.card}>
+  <div className={styles.card}>
       <h4>{item.name}</h4>
       <Image
         src="/placeholder-image.jpg"
@@ -15,13 +15,6 @@ export default function createCard(item: any) {
       <p>{item.description}</p>
       <a href="#">{item.artist}</a>
       <p>Price: ${item.price} </p>
-      <Link href="/favorites">&#10084;</Link>
-        <Image
-          src="/cart.png"
-          width={20}
-          height={20}
-          alt="Carrito de compras"
-        />
     </div>
   );
 }
