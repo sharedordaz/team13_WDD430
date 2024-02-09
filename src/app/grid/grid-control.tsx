@@ -15,7 +15,7 @@ export default function GridControl(){
          <button>
              Price↓
          </button>
-         <p>|</p>
+         <div className = {styles.gridControlBar}>|</div>
           <button>
                 A-Z↑
          </button>
