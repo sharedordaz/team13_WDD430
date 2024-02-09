@@ -1,4 +1,5 @@
 import createCard from "./card";
+import { sortWorks } from "./sorter";
 import { Artist, ArtItem } from './types';
 
 import { headers } from 'next/headers';
@@ -40,8 +41,10 @@ async function myfetch(host: string | null) {
     //console.log('ARTISTS:' + artists)
     artists.forEach((artist: Artist) => {
         let artItems = artist.artItems;
-        //console.log("--------------\n" + artist.name + artItems)
+        let sortedItems = sortWorks('alph-reverse', artItems)
+        //console.log("--------------\n" + artist.name + sortedItems)
         artItems.forEach((artItem: ArtItem) => {
+            console.log (artItem.name);
             const card = createCard(artItem, artist.name)
             allCards.push(card);
 
