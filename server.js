@@ -24,19 +24,23 @@ app.prepare().then(() => {
     console.log("On /database")
         });
 
-  server.get('*', (req, res) => {
-    try{
-        connectToDatabase()
-
-    }catch(error){
-        console.error('Error: ', error)
-    }
+  server.get('*', async (req, res) => {
     return handle(req, res);
-  });
-
-  server.listen(port, err => {
+  })
+  server.listen(port, async (err) => {
     if (err) throw err;
-    console.log(`> Ready on Port ${port}`);
+    try{
+        await connectToDatabase();
+        console.log('\x1b[1m','\x1b[32m', 'Connected to the database', '\x1b[0m')
+    }
+
+    catch(error){
+        console.error('Error: ', error);
+        process.exit(1);
+    }
+
+   
+    console.log('\x1b[36m', `> Ready on Port`, '\x1b[1m', '\x1b[31m', `${port}`, '\x1b[0m');
   });
 });
 

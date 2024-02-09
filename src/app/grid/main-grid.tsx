@@ -1,15 +1,28 @@
 import createCard from "./card";
+import { Artist, ArtItem } from './types';
+
+import { headers } from 'next/headers';
 
 
 export default async function MainGrid() {
-  const allCards = await myfetch();
-  //console.log("ALLCARDS:", allCards)
+
+  const headersList = headers();
+  const host: string | null = headersList.get('host');
+  const url = headersList.get('next-url');
+
+  const allCards = await myfetch(host);
+  console.log("HOST:", host, '\nURL:', url);
   return allCards;
 }
 
-async function myfetch() {
-  const baseurl = 'http://localhost:3000';
-  const url = baseurl + '/database';
+export const artistArray: Artist[] = [];
+
+async function myfetch(host: string | null) {
+
+  const baseUrl = 'http://' + host;
+  //const baseUrl = 'http://localhost:3000';
+  const url = baseUrl + '/database?_=' + Date.now();
+  console.log(url);
 
   try {
     const response = await fetch(url);
@@ -19,10 +32,27 @@ async function myfetch() {
     }
 
     const jsonData = await response.json();
-    //console.log("Reading this:\n", jsonData);
+    //console.log("Reading this:\n", JSON.stringify(jsonData));
 
-    const artItems = jsonData[0].artItems;
-    const allCards = artItems.map((artItem: any) => createCard(artItem));
+    const artists = jsonData[0].artists;
+
+    const allCards: JSX.Element[] = [];
+    //console.log('ARTISTS:' + artists)
+    artists.forEach((artist: Artist) => {
+        let artItems = artist.artItems;
+        //console.log("--------------\n" + artist.name + artItems)
+        artItems.forEach((artItem: ArtItem) => {
+            const card = createCard(artItem, artist.name)
+            allCards.push(card);
+
+        });
+
+
+        artistArray.push(artist)
+    });
+
+    //console.log(artistArray)
+
     //console.log(allCards)
 
     return allCards;
