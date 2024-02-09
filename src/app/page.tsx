@@ -4,6 +4,8 @@ import Banner from '@/app/banner';
 import MainGrid from '@/app/grid/main-grid'
 import Footer from "./footer"; 
 import Head from 'next/head';
+import GridControl from '@/app/grid/grid-control'
+
 
 /*
 TODO:
@@ -34,6 +36,7 @@ export default function Home() {
             <div className={styles.banner}>
                 <Banner />
             </div>
+            <GridControl />
             <main className={styles.main}>
                 <MainGrid />
             </main>

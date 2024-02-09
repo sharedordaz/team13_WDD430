@@ -1,6 +1,6 @@
 
 .main {
-  margin-top: 30%;
+  margin-top: 0%;
   display: grid;
   grid-template: repeat(auto-fill, minmax(20%, 1fr))
    / repeat(auto-fill, minmax(20%, 1fr));
@@ -63,7 +63,32 @@
   max-width: 100%;
   width: var(--max-width);
 }
+.gridControlDiv{
+    margin-top: 35%;
+    padding: 1em 1em 1em 1em;
 
+    background-color: lightgray;
+    color: white;
+    user-select: none;
+
+    display: flex;
+    flex-direction: row;
+    align-content: right;
+    justify-content:right;
+    gap: 10px;
+}
+
+.gridControlDiv button{
+    background-color: darkgray;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em;
+}
+
+.gridControlDiv button:hover{
+    background-color: gray;
+    cursor: pointer;
+}
 .card {
   padding: 1rem 1.2rem;
   border-radius: var(--border-radius);
