@@ -1,5 +1,5 @@
 import createCard from "./card";
-import { sortWorks } from "./sorter";
+import { sortArray } from "./sorter";
 import { Artist, ArtItem } from './types';
 
 import { headers } from 'next/headers';
@@ -37,13 +37,15 @@ async function myfetch(host: string | null) {
 
     const artists = jsonData[0].artists;
 
+    let sortedArtists = sortArray('alph', artists);
+
     const allCards: JSX.Element[] = [];
     //console.log('ARTISTS:' + artists)
-    artists.forEach((artist: Artist) => {
+    sortedArtists.forEach((artist: any) => {
         let artItems = artist.artItems;
-        let sortedItems = sortWorks('alph-reverse', artItems)
+        let sortedItems = sortArray('price-reverse', artItems)
         //console.log("--------------\n" + artist.name + sortedItems)
-        artItems.forEach((artItem: ArtItem) => {
+        sortedItems.forEach((artItem: any) => {
             console.log (artItem.name);
             const card = createCard(artItem, artist.name)
             allCards.push(card);
