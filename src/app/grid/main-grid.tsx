@@ -23,7 +23,7 @@ async function myfetch(host: string | null) {
   const baseUrl = 'http://' + host;
   //const baseUrl = 'http://localhost:3000';
   const url = baseUrl + '/database?_=' + Date.now();
-  console.log(url);
+  console.log('Database URL:', url);
 
   try {
     const response = await fetch(url);
@@ -46,7 +46,7 @@ async function myfetch(host: string | null) {
         let sortedItems = sortArray('price-reverse', artItems)
         //console.log("--------------\n" + artist.name + sortedItems)
         sortedItems.forEach((artItem: any) => {
-            console.log (artItem.name);
+            //console.log (artItem.name);
             const card = createCard(artItem, artist.name)
             allCards.push(card);
 
