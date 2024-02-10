@@ -16,7 +16,6 @@ export default function createCard(item: ArtItem, artist: string) {
       <p>{item.description}</p>
       <a href="#">{artist}</a>
       <p>Price: ${item.price} </p>
-      <Link href="/favorites">&#10084;</Link>
         <Image
           src="/cart.png"
           width={20}
