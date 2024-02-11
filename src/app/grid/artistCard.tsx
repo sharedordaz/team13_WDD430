@@ -2,6 +2,7 @@ import styles from "@/app/page.module.css";
 import Image from "next/image";
 import { Artist } from "./types";
 
+
 export default function artistCard(item: Artist, currentStyle = 'none') {
   const imageUrl = `/images/${item.picture}`;
   const id = `${item.id}`;
@@ -18,6 +19,7 @@ export default function artistCard(item: Artist, currentStyle = 'none') {
          />
          <p>{item.personalStories}</p>
       </div>
+      
     </div>
   );
 }

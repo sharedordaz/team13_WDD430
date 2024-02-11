@@ -1,4 +1,4 @@
-import artistCard from "./artistCard";
+import artistCard from "./artistCard.tsx";
 import createCard from "./card";
 import { sortArray } from "./sorter";
 import { Artist, ArtItem, Sort } from './types';
@@ -66,7 +66,7 @@ async function myfetch(host: string | null, sort: Sort) {
     const allCards: JSX.Element[] = [];
     //console.log('ARTISTS:' + artists)
     sortedArtists.forEach((artist: any) => {
-        allCards.push(artistCard(artist, 'none'))
+        allCards.push(artistCard(artist, 'block'))
 
         let artItems = artist.artItems;
         let sortedItems = sortArray(sort, artItems)

@@ -43,7 +43,7 @@ export default function Home() {
                 <MainGrid />
             </main>
             <Footer />
-
+            <script type="text/javascript" src= "static/script.js"> </script>
     </>
   );
 }
