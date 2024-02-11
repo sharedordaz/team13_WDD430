@@ -1,29 +1,51 @@
 import createCard from "./card";
 import { sortArray } from "./sorter";
-import { Artist, ArtItem } from './types';
+import { Artist, ArtItem, Sort } from './types';
 
-import { headers } from 'next/headers';
+import { headers, useHeaders } from 'next/headers';
 
+import { useRouter } from 'next/router';
 
 export default async function MainGrid() {
 
-  const headersList = headers();
-  const host: string | null = headersList.get('host');
-  const url = headersList.get('next-url');
+    
 
-  const allCards = await myfetch(host);
-  console.log("HOST:", host, '\nURL:', url);
-  return allCards;
+
+
+
+  const headersList = headers();
+
+  const host: string | null = headersList.get('host');
+  let referer = headersList.get('referer');
+    if (referer){
+      let sort = referer.replace(`http://${host}/?sort=`, "");
+      console.log("HOST:", host, '\nREFERER:', referer, '\nSORT:', sort);
+      const allCards = await myfetch(host, sort);
+      return allCards;
+
+
+        }
+    else{
+        let sort = undefined;
+        console.log("HOST:", host, '\nREFERER:', referer, '\nSORT:', sort);
+        const allCards = await myfetch(host, "alph");
+        return allCards;
+
+
+        }
+/*  for (const key of headersList.entries()){
+        console.log(key);
+      }*/
 }
 
 export const artistArray: Artist[] = [];
 
-async function myfetch(host: string | null) {
+async function myfetch(host: string | null, sort: Sort) {
 
   const baseUrl = 'http://' + host;
   //const baseUrl = 'http://localhost:3000';
   const url = baseUrl + '/database?_=' + Date.now();
-  console.log(url);
+  console.log('Database URL:', url);
 
   try {
     const response = await fetch(url);
@@ -36,17 +58,24 @@ async function myfetch(host: string | null) {
     //console.log("Reading this:\n", JSON.stringify(jsonData));
 
     const artists = jsonData[0].artists;
+    let sortedArtists;
+    if (sort == "artalphrev"){
+        console.log('true')
+    sortedArtists = sortArray('alphrev', artists);
+    }
 
-    let sortedArtists = sortArray('alph', artists);
+    else {
+    sortedArtists = sortArray('alph', artists);
+    }
 
     const allCards: JSX.Element[] = [];
     //console.log('ARTISTS:' + artists)
     sortedArtists.forEach((artist: any) => {
         let artItems = artist.artItems;
-        let sortedItems = sortArray('price-reverse', artItems)
+        let sortedItems = sortArray(sort, artItems)
         //console.log("--------------\n" + artist.name + sortedItems)
         sortedItems.forEach((artItem: any) => {
-            console.log (artItem.name);
+            //console.log (artItem.name);
             const card = createCard(artItem, artist.name)
             allCards.push(card);
 

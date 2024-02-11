@@ -4,7 +4,7 @@ import Banner from '@/app/banner';
 import MainGrid from '@/app/grid/main-grid'
 import Footer from "./footer"; 
 import Head from 'next/head';
-import GridControl from '@/app/grid/grid-control'
+import GridControl from '@/app/grid/grid-control';
 
 
 /*
@@ -20,6 +20,7 @@ https://www.globant.com/about
 
 */
 import { Metadata } from 'next';
+import Tester from "./test";
  
 export const metadata: Metadata = {
   title: 'Handcraft Haven',
@@ -37,6 +38,7 @@ export default function Home() {
                 <Banner />
             </div>
             <GridControl />
+            {/*<Tester/>*/}
             <main className={styles.main}>
                 <MainGrid />
             </main>
