@@ -324,6 +324,30 @@
   }
 }
 
+/* */
+.contactIconsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px; /* Ajusta según sea necesario */
+}
+.formGroup1{
+  padding-top: 40px;
+}
+.formGroup1 h2{
+  border-bottom: solid 2px #000;
+  text-align: center;
+}
+
+.contactIconsContainer img {
+  width: 40px; /* Ajusta según sea necesario */
+  margin-right: 10px; /* Ajusta según sea necesario */
+}
+
+.contactIconsContainer img:hover{
+  border-bottom: solid 3px #2980b9;
+}
+
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
   .grid {
