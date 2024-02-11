@@ -66,7 +66,7 @@ async function myfetch(host: string | null, sort: Sort) {
     const allCards: JSX.Element[] = [];
     //console.log('ARTISTS:' + artists)
     sortedArtists.forEach((artist: any) => {
-        allCards.push(artistCard(artist, 'block'))
+        allCards.push(artistCard(artist, 'block'));
 
         let artItems = artist.artItems;
         let sortedItems = sortArray(sort, artItems)

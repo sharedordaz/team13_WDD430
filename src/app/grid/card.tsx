@@ -14,7 +14,7 @@ export default function createCard(item: ArtItem, artist: string) {
         alt={item.description}
       />
       <p>{item.description}</p>
-      <a href="#">{artist}</a>
+      <b>{artist}</b>
       <p>Price: ${item.price} </p>
         <Image
           src="/cart.png"
@@ -22,6 +22,8 @@ export default function createCard(item: ArtItem, artist: string) {
           height={20}
           alt="Carrito de compras"
         />
+
     </div>
+
   );
 }
