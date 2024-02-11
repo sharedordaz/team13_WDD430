@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from "@/app/page.module.css";
+import Link from 'next/link'
 
 export default function ContactForm() {
   return (
@@ -61,14 +62,12 @@ export default function ContactForm() {
         </div>
       </div>
       <div className={styles.Button}>
-  <a href="/home" className={styles.submitButtonLink}>
-    <button
-      type="submit"
-      className={styles.submitButton} 
-    >
-      Submit
-    </button>
-  </a>
+          <Link href="/thanks">
+        
+              <img src="boton.png" alt="Carrito de compras" />
+          </Link>
+          
+  
 </div>
 
       {/* Contact Information */}
@@ -88,3 +87,4 @@ export default function ContactForm() {
     </form>
   );
 }
+
