@@ -4,11 +4,12 @@ import Image from "next/image";
 import { ArtItem } from "./types";
 
 export default function createCard(item: ArtItem, artist: string) {
+  const imageUrl = `/images/${item.image}`;
   return (
     <div className={styles.card}>
       <h4>{item.name}</h4>
       <Image
-        src="/placeholder-image.jpg"
+        src={imageUrl}
         width={500}
         height={500}
         alt={item.description}
