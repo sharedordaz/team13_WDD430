@@ -58,8 +58,15 @@ async function myfetch(host: string | null, sort: Sort) {
     //console.log("Reading this:\n", JSON.stringify(jsonData));
 
     const artists = jsonData[0].artists;
+    let sortedArtists;
+    if (sort == "artalphrev"){
+        console.log('true')
+    sortedArtists = sortArray('alphrev', artists);
+    }
 
-    let sortedArtists = sortArray('alph', artists);
+    else {
+    sortedArtists = sortArray('alph', artists);
+    }
 
     const allCards: JSX.Element[] = [];
     //console.log('ARTISTS:' + artists)

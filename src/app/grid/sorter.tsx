@@ -11,11 +11,11 @@ export function sortArray(style: string | null, artArray: (ArtItem[] | Artist[])
     switch (style){
      case 'alph':
         return artArray.sort((a, b) => a.name.localeCompare(b.name));
-     case 'alph-reverse':
+     case 'alphrev':
         return artArray.sort((a, b) => b.name.localeCompare(a.name));
      case 'price':
         return artArray.sort((a, b) => (a as ArtItem).price - ((b as ArtItem).price));
-     case 'price-reverse':
+     case 'pricerev':
         return artArray.sort((a, b) => (b as ArtItem).price - ((a as ArtItem).price));
     default:
         return artArray;
