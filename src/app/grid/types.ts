@@ -13,3 +13,5 @@ export type Artist = {
   personalStories: string;
   artItems: ArtItem[]
 }
+
+export type Sort = undefined | string
