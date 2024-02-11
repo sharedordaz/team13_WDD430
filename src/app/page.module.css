@@ -13,6 +13,13 @@
 
 }
 
+.shopCart{
+    position: absolute;
+    margin:15% 20% 15% 20%;
+
+    border: 1px solid gray;
+}
+
 .top_void{
   background-color:#534B52;
   width: 100%;

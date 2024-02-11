@@ -8,7 +8,7 @@ export default function NavBar() {
         <li><a href="/contact">&#9993; Contact Us</a></li>
     </ul>
     <div className={styles.shoppingCart}>
-          <Link href="/shop">
+          <Link href="/cart">
               <img src="cart.png" alt="Carrito de compras" />
           </Link>
     </div>
