@@ -1,3 +1,4 @@
+import artistCard from "./artistCard";
 import createCard from "./card";
 import { sortArray } from "./sorter";
 import { Artist, ArtItem, Sort } from './types';
@@ -7,12 +8,7 @@ import { headers, useHeaders } from 'next/headers';
 import { useRouter } from 'next/router';
 
 export default async function MainGrid() {
-
     
-
-
-
-
   const headersList = headers();
 
   const host: string | null = headersList.get('host');
@@ -22,7 +18,6 @@ export default async function MainGrid() {
       console.log("HOST:", host, '\nREFERER:', referer, '\nSORT:', sort);
       const allCards = await myfetch(host, sort);
       return allCards;
-
 
         }
     else{
@@ -71,6 +66,8 @@ async function myfetch(host: string | null, sort: Sort) {
     const allCards: JSX.Element[] = [];
     //console.log('ARTISTS:' + artists)
     sortedArtists.forEach((artist: any) => {
+        allCards.push(artistCard(artist, 'none'))
+
         let artItems = artist.artItems;
         let sortedItems = sortArray(sort, artItems)
         //console.log("--------------\n" + artist.name + sortedItems)
@@ -80,6 +77,7 @@ async function myfetch(host: string | null, sort: Sort) {
             allCards.push(card);
 
         });
+
 
 
         artistArray.push(artist)

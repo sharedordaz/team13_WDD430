@@ -103,6 +103,18 @@
     height: 180%;
     width: 3px;
 }
+
+.artistCard{
+    /*display: none;*/
+    background-color: #FFFFFF;
+
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    bottom: 10%;
+    width: 80%;
+    height: 80%;
+}
 .card {
   padding: 1rem 1.2rem;
   border-radius: var(--border-radius);

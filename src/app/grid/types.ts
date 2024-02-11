@@ -8,6 +8,7 @@ export type ArtItem = {
 };
 
 export type Artist = {
+  id: number;
   name: string;
   picture: string;
   personalStories: string;
