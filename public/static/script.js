@@ -51,6 +51,7 @@ btags.forEach(bTag => {
 
 //alert(shoppingCarts);
 // Add an event listener to each non-null <b> tag
+const shoppingCard = [];
 shoppingCarts.forEach(c => {
   // Check if the bTag is not null
   if (c) {
@@ -59,12 +60,27 @@ shoppingCarts.forEach(c => {
     // Add an event listener to the bTag
     c.addEventListener('click', (event) => {
       // Function to execute when <b> tag is clicked
-      alert('ShoppingCart ');
+      //alert('ShoppingCart ');
+        let cleanedEntry = c.alt.replace(/\\/g, '');
+        //alert(cleanedEntry);
+        shoppingCard.push(cleanedEntry);
+
+        let cleanedList = JSON.stringify(shoppingCard).replace(/\\/g, '');
+        cleanedList = cleanedList.replace(/\]"/g, ']');
+        cleanedList = cleanedList.replace(/"\[/g, '[')
+        //alert(cleanedList);
+        document.cookie = `cart=${cleanedList}`
+        
+
+        //alert(shoppingCard);
+        
+
       
       // Prevent the default behavior of the <b> tag (e.g., navigating to the href)
       event.preventDefault();
     });
   }
 });
+
 
 

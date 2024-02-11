@@ -1,3 +1,4 @@
+import { RequestCookie } from "next/dist/compiled/@edge-runtime/cookies";
 import artistCard from "./artistCard.tsx";
 import createCard from "./card";
 import { sortArray } from "./sorter";
@@ -67,7 +68,7 @@ async function myfetch(host: string | null, sort: Sort) {
     //console.log('ARTISTS:' + artists)
     sortedArtists.forEach((artist: any) => {
         const cookieStore = cookies();
-        const cookiedArtist = cookieStore.get('artist');
+        const cookiedArtist: RequestCookie | undefined = cookieStore.get('artist');
         //console.log(cookiedArtist.value, artist.name)
         if (cookieStore.get('artist')){
 
