@@ -3,9 +3,9 @@ import createCard from "./card";
 import { sortArray } from "./sorter";
 import { Artist, ArtItem, Sort } from './types';
 
-import { headers, useHeaders } from 'next/headers';
+import { headers, cookies } from 'next/headers';
 
-import { useRouter } from 'next/router';
+
 
 export default async function MainGrid() {
     
@@ -66,7 +66,19 @@ async function myfetch(host: string | null, sort: Sort) {
     const allCards: JSX.Element[] = [];
     //console.log('ARTISTS:' + artists)
     sortedArtists.forEach((artist: any) => {
-        allCards.push(artistCard(artist, 'block'));
+        const cookieStore = cookies();
+        const cookiedArtist = cookieStore.get('artist');
+        //console.log(cookiedArtist.value, artist.name)
+        if (cookieStore.get('artist')){
+
+          if (cookiedArtist.value && cookiedArtist.value == artist.name){
+                allCards.push(artistCard(artist, 'block'))
+          }
+          else {
+               allCards.push(artistCard(artist, 'none'));
+    
+            }
+        }
 
         let artItems = artist.artItems;
         let sortedItems = sortArray(sort, artItems)
