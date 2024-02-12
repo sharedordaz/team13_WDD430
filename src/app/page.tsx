@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <link rel="icon" href="path/to/favicon.ico" />
+      <link rel="icon" href="/favicon.ico" />
 
       <div className={styles.top_void}></div>
       <div className={styles.banner}>
