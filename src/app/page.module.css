@@ -614,7 +614,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-100%, -80%);
-  margin-top: 10%; 
+  margin-top: 10%;
   padding: 2rem;
   background-color: #FFFFFF;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.361);
@@ -627,4 +627,16 @@
 
 .shopCart p {
   padding-bottom: 2rem;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.center::before,
+.center::after {
+  content: none; 
 }
