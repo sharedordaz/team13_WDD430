@@ -1,8 +1,8 @@
 import styles from "./page.module.css";
-import Banner from "@/app/banner";
-import MainGrid from "@/app/grid/main-grid";
+import Banner from "./banner";
+import MainGrid from "./grid/main-grid";
 import Footer from "./footer";
-import GridControl from "@/app/grid/grid-control";
+import GridControl from "./grid/grid-control";
 
 /*
 TODO:
