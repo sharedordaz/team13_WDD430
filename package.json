@@ -9,7 +9,7 @@
     "lint": "next lint",
     "json_save": "node src/app/database/json_save.js",
     "start_withDB": "node server.js",
-    "deploy": "npm i && npm run build && node server.js",
+    "deploy": "npm i && node server.js",
     "vercel-deploy": "npm run build && vercel --prod"
   },
   "dependencies": {
