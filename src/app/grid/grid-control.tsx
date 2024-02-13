@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import styles from '@/app/page.module.css';
+import styles from '../page.module.css';
 
 export default function GridControl(){
     let sortStyle = 'alph';
