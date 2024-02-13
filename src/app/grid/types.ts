@@ -15,4 +15,4 @@ export type Artist = {
   artItems: ArtItem[]
 }
 
-export type Sort = undefined | string
+export type Sort = string | undefined;

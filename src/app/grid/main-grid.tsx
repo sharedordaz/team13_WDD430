@@ -1,5 +1,5 @@
 import { RequestCookie } from "next/dist/compiled/@edge-runtime/cookies";
-import artistCard from "./artistCard.tsx";
+import artistCard from "./artistCard";
 import createCard from "./card";
 import { sortArray } from "./sorter";
 import { Artist, ArtItem, Sort } from './types';
@@ -36,7 +36,7 @@ export default async function MainGrid() {
 
 export const artistArray: Artist[] = [];
 
-async function myfetch(host: string | null, sort: Sort) {
+async function myfetch(host: string | null, sort: any) {
 
   const baseUrl = 'http://' + host;
   //const baseUrl = 'http://localhost:3000';
@@ -70,7 +70,7 @@ async function myfetch(host: string | null, sort: Sort) {
         const cookieStore = cookies();
         const cookiedArtist: RequestCookie | undefined = cookieStore.get('artist');
         //console.log(cookiedArtist.value, artist.name)
-        if (cookieStore.get('artist')){
+        if (cookiedArtist){
 
           if (cookiedArtist.value && cookiedArtist.value == artist.name){
                 allCards.push(artistCard(artist, 'block'))

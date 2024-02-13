@@ -1,6 +1,8 @@
 /* eslint-disable no-undef */
 const express = require('express');
 const next = require('next');
+
+
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
 const handle = app.getRequestHandler();
@@ -8,7 +10,7 @@ const handle = app.getRequestHandler();
 const { connectToDatabase } = require('./database/connect.js'); // Adjust the path accordingly
 const { databasetoJSON } = require('./database/read_db.js')
 
-const port = process.env.port || 3000;
+const port = process.env.PORT || 3000;
 
 
 

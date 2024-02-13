@@ -1,9 +1,7 @@
-import Image from "next/image";
 import styles from "./page.module.css";
 import Banner from "@/app/banner";
 import MainGrid from "@/app/grid/main-grid";
 import Footer from "./footer";
-import Head from "next/head";
 import GridControl from "@/app/grid/grid-control";
 
 /*
@@ -19,7 +17,6 @@ https://www.globant.com/about
 
 */
 import { Metadata } from "next";
-import Tester from "./test";
 
 export const metadata: Metadata = {
   title: "Handcraft Haven",
@@ -41,7 +38,9 @@ export default function Home() {
         <MainGrid />
       </main>
       <Footer />
-      <script type="text/javascript" src= "static/script.js"> </script>
+
+      {/*<Script src="static/script.js" />*/}
+      <script async type="text/javascript" src= "static/script.js"> </script>
     </>
   );
 }
