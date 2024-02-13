@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "node server",
     "lint": "next lint",
     "json_save": "node src/app/database/json_save.js",
     "start_withDB": "node server.js",
