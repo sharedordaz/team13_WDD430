@@ -9,7 +9,7 @@
     "lint": "next lint",
     "json_save": "node src/app/database/json_save.js",
     "start_withDB": "node server.js",
-    "deploy": "npm i && npm run build && NODE_ENV=production node server.js"
+    "deploy": "npm i && npm run build && NODE_ENV=testing node server.js"
   },
   "dependencies": {
     "dotenv": "^16.4.1",
