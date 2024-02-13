@@ -1,6 +1,6 @@
 
-import Footer from "@/app/footer"; 
-import styles from "@/app/page.module.css";
+import Footer from "../footer"; 
+import styles from "../page.module.css";
 import ContactForm from "./contacform";
 export default function Home() {
     return (

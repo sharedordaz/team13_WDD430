@@ -1,8 +1,8 @@
 // page.tsx
-import { RequestCookie } from "next/dist/compiled/@edge-runtime/cookies"
-import { cookies } from "next/headers"
-import styles from "@/app/page.module.css"
-import Footer from "@/app/footer"
+import { RequestCookie } from "next/dist/compiled/@edge-runtime/cookies";
+import { cookies } from "next/headers";
+import styles from "../page.module.css";
+import Footer from "../footer";
 
 export default function ShoppingCart() {
   const cookieStore = cookies()
