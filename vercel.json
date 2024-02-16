@@ -8,8 +8,14 @@
   ],
   "routes": [
     {
+      "src": "/database",
+      "dest": "server.js",
+    },
+    {
       "src": "/(.*)",
       "dest": "server.js"
     }
+
+
   ]
 }
