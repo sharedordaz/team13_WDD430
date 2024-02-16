@@ -48,6 +48,8 @@ app.prepare().then(() => {
     }
    
     console.log('\x1b[36m', `> Ready on Port`, '\x1b[1m', '\x1b[31m', `${port}`, '\x1b[0m');
+    
+    //HTTP REQUEST TO AUTOCOMPILE
     const options = {
         hostname: 'localhost', // Assuming your server is running on localhost
         port: 3000, // Assuming your server is running on port 3000, change accordingly
