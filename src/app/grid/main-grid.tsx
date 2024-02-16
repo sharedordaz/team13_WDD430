@@ -6,8 +6,6 @@ import { Artist, ArtItem, Sort } from './types';
 
 import { headers, cookies } from 'next/headers';
 
-
-
 export default async function MainGrid() {
     
   const headersList = headers();
@@ -51,7 +49,7 @@ async function myfetch(host: string | null, sort: any) {
     }
 
     const jsonData = await response.json();
-    //console.log("Reading this:\n", JSON.stringify(jsonData));
+    console.log("Reading this:\n", JSON.stringify(jsonData));
 
     const artists = jsonData[0].artists;
     let sortedArtists;
