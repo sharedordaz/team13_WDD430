@@ -5,11 +5,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "node server",
+    "start": "next start",
     "lint": "next lint",
     "json_save": "node src/app/database/json_save.js",
     "start_withDB": "node server.js",
-    "deploy": "npm i && NODE_ENV=testing node server.js",
+    "deploy_testing": "npm i && NODE_ENV=testing node server.js",
+    "deploy_prod": "npm i && npm run build && NODE_ENV=production npm run start_withDB",
     "vercel-deploy": "npm run build && vercel --prod"
   },
   "dependencies": {
