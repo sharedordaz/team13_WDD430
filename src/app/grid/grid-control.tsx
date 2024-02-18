@@ -36,7 +36,7 @@ export default function GridControl(){
              Price↓
          </button>
          </a>
-         <div className = {styles.gridControlBar}>|</div>
+         <p className = {styles.gridControlBar}>|</p>
          <a href="/?sort=artalph">
          <button > 
                 A-Z↑
