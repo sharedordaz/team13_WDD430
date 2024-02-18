@@ -11,7 +11,8 @@
     "start_withDB": "node server.js",
     "deploy_testing": "chmod +x ./vercel.sh && ./vercel.sh && npm i && NODE_ENV=testing node server.js",
     "deploy_prod": "npm i && npm run build && NODE_ENV=production node server.js",
-    "vercel-deploy": "npm run build && vercel --prod"
+    "vercel-deploy": "npm run build && vercel --prod",
+    "vercel-lame": "chmod +x ./vercel.sh && ./vercel.sh"
   },
   "dependencies": {
     "dotenv": "^16.4.1",
