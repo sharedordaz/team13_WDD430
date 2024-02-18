@@ -83,11 +83,13 @@
     background-color: #FFFFFF;
 
     position: fixed;
+    display: flex;
+    flex-wrap: wrap;
     top: 10%;
     left: 10%;
     bottom: 10%;
     width: 80%;
-    height: 80%;
+    height: 90%;
 
     z-index: 99;
 }
