@@ -6,7 +6,7 @@ export default function createCard(item: ArtItem, artist: string) {
   const imageUrl = `/images/${item.image}`;
   const cartItem = `{"Name" :"${item.name}", "Price" : "${item.price}"}`
   return (
-    <div className={styles.card}>
+    <div key={item.id}  className={styles.card}>
       <h4>{item.name}</h4>
       <Image
         src={imageUrl}

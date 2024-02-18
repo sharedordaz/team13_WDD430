@@ -7,7 +7,7 @@ export default function artistCard(item: Artist, currentStyle = "none") {
   const imageUrl = `/images/${item.picture}`;
   const id = `${item.id}`;
   return (
-    <div
+    <div key = {item.id}
       id={id}
       className={styles.artistCard}
       style={{ display: currentStyle }}

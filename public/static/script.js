@@ -80,7 +80,7 @@ shoppingCarts.forEach(c => {
         let cleanedList = JSON.stringify(shoppingCard).replace(/\\/g, '');
         cleanedList = cleanedList.replace(/\}"/g, '}');
         cleanedList = cleanedList.replace(/"\{/g, '{')
-        //alert(cleanedList);
+        alert("Element added to shopping cart");
         document.cookie = `cart=${cleanedList}`
         
 

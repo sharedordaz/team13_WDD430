@@ -21,6 +21,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Header />
         {children}
+        <script async type="text/javascript" src= "static/script.js"> </script>
       </body>
       
     </html>

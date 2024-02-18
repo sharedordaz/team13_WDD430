@@ -40,7 +40,7 @@ export default function Home() {
       <Footer />
 
       {/*<Script src="static/script.js" />*/}
-      <script async type="text/javascript" src= "static/script.js"> </script>
+
     </>
   );
 }
