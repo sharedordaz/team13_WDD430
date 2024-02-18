@@ -61,7 +61,7 @@ app.prepare().then(() => {
         method: 'GET' // or 'POST', 'PUT', 'DELETE', etc. depending on your needs
     };
     const req = http.request(options, (res) => {
-        //console.log(`\x1b[1m GET REQUEST INFO\n Hostname: ${hostname}\n PORT: ${port}`)
+        console.log(`\x1b[1m GET REQUEST INFO\n Hostname: ${hostname}\n PORT: ${port}`)
         //console.log(`URL: http://${hostname}:${port}/database`)
         //console.log(`statusCode: ${res.statusCode}\x1b[0m`);
 
