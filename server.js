@@ -53,7 +53,7 @@ app.prepare().then(() => {
    
     console.log('\x1b[36m', `> Ready on Port`, '\x1b[1m', '\x1b[31m', `${port}`, '\x1b[0m');
 
-    //HTTP REQUEST TO AUTOCOMPILE
+//HTTP REQUEST TO AUTOCOMPILE
     const options = {
         hostname: hostname, // Assuming your server is running on localhost
         port: port, // Assuming your server is running on port 3000, change accordingly
@@ -61,13 +61,15 @@ app.prepare().then(() => {
         method: 'GET' // or 'POST', 'PUT', 'DELETE', etc. depending on your needs
     };
     const req = http.request(options, (res) => {
-        console.log(`\x1b[1m GET REQUEST INFO\n Hostname: ${hostname}\n PORT: ${port}`)
-        console.log(`URL: http://${hostname}:${port}/database`)
-        console.log(`statusCode: ${res.statusCode}\x1b[0m`);
+        //console.log(`\x1b[1m GET REQUEST INFO\n Hostname: ${hostname}\n PORT: ${port}`)
+        //console.log(`URL: http://${hostname}:${port}/database`)
+        //console.log(`statusCode: ${res.statusCode}\x1b[0m`);
 
         res.on('data', (d) => {
             if (d){
-                //process.stdout.write(`Request read: ${d}`);
+                let result = JSON.stringify(d);
+                let simp_result = result.substring(0, 20)
+                process.stdout.write(`Request read: ${simp_result} ...`);
                 }
             else{
                 process.stdout.write('Nothing shown')
@@ -81,6 +83,6 @@ app.prepare().then(() => {
 
     req.end();
 
-
+//
   });
 });
