@@ -1,4 +1,6 @@
 {
-
+  "rewrites": [
+    { "source": "/redirect", "destination": "https://wdd430-team13.onrender.com/", "statusCode": 302 }
+  ]
 }
 
